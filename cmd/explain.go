@@ -45,11 +45,6 @@ var explainCmd = &cobra.Command{
 		command := args[0]
 		commandLength := len(command)
 
-		if commandLength > 120 {
-			utils.LogError("Command is too long. Please keep it under 120 characters.")
-			return
-		}
-
 		spin := utils.GetSpinner()
 		spin.Suffix = " Explaining command..."
 		spin.Start()
