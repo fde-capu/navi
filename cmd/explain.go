@@ -19,13 +19,13 @@ Here is the command:
 
 > %s
 
-If the command or question is not related to programming languages, return "NAVI_AI_ERROR".
+If the command or question is not related to computers, return "NAVI_AI_ERROR".
 
 If the command or question is unclear, ambiguous, or lacking enough information to be cleared, make explicit assumptions.
 
 Do your best to explain and solve the command, problem or question.
 
-If the command or question requires additional explanation beyond your capabilities, return "NAVI_AI_ERROR".
+If the command or question requires additional explanation beyond your capabilities, return the reason why so.
 
 **Examples:**
 
