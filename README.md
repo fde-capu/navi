@@ -10,6 +10,7 @@ https://github.com/nitintf/navi/assets/55453926/407c41cb-0eb7-4362-a7db-65b224fe
 Navi - Your AI-powered Shell Guide
 
 Usage:
+	navi prompt-string
   navi [flags]
   navi [command]
 
