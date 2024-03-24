@@ -51,7 +51,7 @@ If the prompt would return an unsafe command, that could potentially put any use
 * Notes: Assuming bash and open-source.
 
 * Prompt: 'Say Hello World in Python.'
-* Response: python -c "print('Hello World')"
+* Response: print('Hello World')
 (no notes)
 
 * Prompt: 'How do I get rich?' (Not related to computers)
