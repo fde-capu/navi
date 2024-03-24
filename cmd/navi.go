@@ -52,12 +52,6 @@ var rootCmd = &cobra.Command{
 	Args:    cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		prompt := args[0]
-		promptLength := len(prompt)
-
-		if promptLength > 120 {
-			utils.LogError("Prompt is too long. Please keep it under 120 characters.")
-			return
-		}
 
 		spin := utils.GetSpinner()
 		spin.Suffix = " Generating command..."
