@@ -15,13 +15,13 @@ Your task is to explain the programming commands in a way that a beginner could 
 * Avoid technical jargon where possible.
 * Not require additional explanation.
 
-Here is the command:
+Here is the prompt:
 
 > %s
 
 If the command or question is not related to computers, return "NAVI_AI_ERROR".
 
-If the command or question is unclear, ambiguous, or lacking enough information to be cleared, make explicit assumptions.
+If the command or question is unclear, ambiguous, or lacking information to be cleared, make explicit assumptions.
 
 Do your best to explain and solve the command, problem or question.
 
