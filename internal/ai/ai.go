@@ -55,7 +55,7 @@ func Generate(ctx context.Context, template string, prompt string) (string, erro
 	part := getResponse(resp)
 
 	if part == nil {
-		return "", errors.New("please provide a valid prompt")
+		return "", errors.New("please provide a valid prompt ")
 	}
 
 	return fmt.Sprint(part), nil
@@ -73,10 +73,6 @@ func getResponse(resp *genai.GenerateContentResponse) genai.Part {
 				foundPart = part
 			}
 		}
-	}
-
-	if foundPart == nil {
-		return nil
 	}
 
 	return foundPart
