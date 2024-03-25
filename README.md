@@ -30,7 +30,7 @@ Example:
 ```shell
 $ navi "list all files`
 
-$ >> ls -a
+$ ls -a
 ```
 
 ## Installation

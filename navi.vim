@@ -1,15 +1,15 @@
 " Integrates Navi into Vim interface.
 " Ctrl+K will prompt the cursor line.
 
+let g:NaviBin = '_'
+
 fun! Navi(s)
 	let current_line = line('.')
 	let s = escape(a:s, "\"")
 	let s = escape(a:s, "\'")
 	let s = escape(a:s, "\`")
 	let s = escape(a:s, "\\")
-	let out = system("_ \'" . s . "\' | sed \'s/\x1B\[[0-9;]*[mK]//g\'")
-	let out = substitute(out, '>> ', '', 'g')
-	let out = substitute(out, '>> ', '', 'g')
+	let out = system(g:NaviBin . " \'" . s . "\' | sed \'s/\x1B\[[0-9;]*[mK]//g\'")
 	let out = trim(out)
 	let lines = split(out, '\n')
 	call append(current_line, '')
@@ -22,4 +22,3 @@ fun! Navi(s)
 endfunction
 
 nnoremap <C-K> :call Navi(getline('.'))<CR>
-
