@@ -1,4 +1,4 @@
-module github.com/nitintf/navi
+module github.com/fde-capu/navi
 
 go 1.19
 

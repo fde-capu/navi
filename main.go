@@ -1,6 +1,7 @@
 package main
 
-import "github.com/nitintf/navi/cmd"
+import "github.com/fde-capu/navi/cmd"
+
 import (
 	"log"
 	"os"

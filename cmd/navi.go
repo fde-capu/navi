@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/nitintf/navi/internal/ai"
-	"github.com/nitintf/navi/utils"
+	"github.com/fde-capu/navi/internal/ai"
+	"github.com/fde-capu/navi/utils"
 	"github.com/spf13/cobra" // Import Cobra library
 )
 
@@ -13,10 +13,10 @@ An expert security-conscious computer programming specialist, you will produce a
 
 > %s
 
-* Guess the context: does it ask for a one-liner? Or for a whole function? In which programming language would it be?
+* Guess the context: does it ask for a one-liner? Or for a whole function? Or for an explanation? Which programming language? Etc.
 
 * In identifying the answer is computer code, output the shortest snippet capable of solving. Don't explain.
-* In identifying the answer is an open question, respond with a short, concise and effective explanation.
+* In identifying the answer is an open question, respond with a short, concise and effective explanation that may include code if needed.
 
 Your rules:
 
@@ -51,7 +51,7 @@ Your rules:
 * Response: print('Hello World')
 
 * Prompt: How do I get rich?
-* Response: Start by asking an AI about it.
+* Response: Start by asking an AI about it. ;)
 
 * Prompt: 'A Python script that simulates a quantum wave function.'
 * Response:
