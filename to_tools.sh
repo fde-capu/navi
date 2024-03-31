@@ -1,4 +1,4 @@
-cp ./bin/navi ~/_/toolz/_
+cp -fluv --preserve=all ./bin/navi ~/_/toolz/_
 mkdir -p ~/.vim/pack/my/start/navi/plugin
-ln -f ./navi.vim ~/.vim/pack/my/start/navi/plugin/navi.vim
+cp -fluv --preserve=all ./navi.vim ~/.vim/pack/my/start/navi/plugin/navi.vim
 echo "Don't froget to re-source navi.vim"
