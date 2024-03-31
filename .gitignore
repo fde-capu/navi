@@ -1,5 +1,6 @@
 bin
 .env
+.navi_env
 main
 
 node_modules

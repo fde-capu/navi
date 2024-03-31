@@ -16,10 +16,10 @@ func main() {
 		log.Fatalf("Error getting current executable path: ", err)
 	}
 	exeDir := filepath.Dir(exePath)
-	envPath := filepath.Join(exeDir, ".env")
+	envPath := filepath.Join(exeDir, ".navi_env")
 	err = godotenv.Load(envPath)
 	if err != nil {
-		log.Fatal("Error loading .env file: ", err)
+		log.Fatal("Error loading .navi_env file: ", err)
 	}
 
 	cmd.Execute()
