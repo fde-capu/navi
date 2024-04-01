@@ -53,8 +53,8 @@ function! SelectionCall()
 	if g:selectionCallCalled == 1
 		return
 	endif
-	g:selectionCallCalled = 1
 	echo g:gretting
+	let g:selectionCallCalled = 1
 	let start_pos = getpos("'<")
 	let end_pos = getpos("'>")
 	let start_line = start_pos[1]
