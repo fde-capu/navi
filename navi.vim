@@ -12,6 +12,7 @@ autocmd CursorMoved * let g:selectionCallCalled = 0
 
 nnoremap <C-k> :<C-u>call SingleLineCall()<CR>
 xnoremap <C-k> :<C-u>call SelectionCall()<CR>
+command! Navi execute "! ./to_tools.sh > /dev/null" | silent! source ~/.vim/navi.vim"
 
 function! EscapeSpecialChars(str)
 	let escapedStr = substitute(a:str, "'", "''", 'g')
