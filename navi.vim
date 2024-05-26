@@ -49,6 +49,7 @@ function! PrintOut(out)
 	call append(current_line, a:out)
 	call append(current_line, '')
 	call append(current_line, '>>>>>>>')
+	call append(current_line, '')
 endfunction
 
 function! SelectionCall()
